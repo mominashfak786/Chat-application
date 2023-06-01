@@ -7,7 +7,6 @@ const http = require('http').Server(app)
 const port = process.env.PORT
 const User = require('./models/userModel')
 const Chat = require('./models/chatModel')
-//mongoose.connect('mongodb://127.0.0.1:27017/chat-app')
 try {
   mongoose.connect(process.env.MONGO_URL);
 } catch (error) {
